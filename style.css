@@ -1,0 +1,227 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #FF6F61 , #b4cce4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    color: #ecf0f1;
+}
+
+.container {
+    background-color: #A2D5F2;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 700px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #002efa;
+    font-size: 50px;
+    font-weight: 600;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+
+
+    ;
+    box-shadow: #2c3e50;
+}
+
+/* Calculator Styles */
+.calculator {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.operation, .inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    font-weight: 500;
+    color: #2a8cce;
+    font-size: 14px;
+}
+
+input, select {
+    padding: 10px;
+    border: 1px solid #7f8c8d;
+    border-radius: 8px;
+    font: size 30px;
+    outline: none;
+    background-color: #4d6680;
+    color: #ecf0f1;
+    transition: border-color 0.3s ease;
+    text-align: center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+
+}
+
+input:focus, select:focus {
+    border-color: #3498db;
+}
+
+button {
+    padding: 12px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Table Styles */
+#product-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 25px;
+    margin-top: 20px;
+}
+
+#product-table th, #product-table td {
+    border: 2px solid #7f8c8d;
+    padding: 10px;
+    text-align: left;
+    color: #ecf0f1;
+    
+}
+
+#product-table th {
+    background-color: #2c3e50;
+    font-weight: 500;
+
+}
+
+#product-table input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #7f8c8d;
+    border-radius: 6px;
+    font-size: 14px;
+    background-color: #34495e;
+    color: #ecf0f1;
+    width:fit-content
+}
+
+.add-row, .remove-row {
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: background-color 0.3s ease;
+}
+
+.add-row:hover, .remove-row:hover {
+    background-color: #2f54a3;
+}
+
+.remove-row {
+    background-color: #e74c3c;
+}
+
+.remove-row:hover {
+    background-color: #c0392b;
+}
+
+/* Result and QR Code Styles */
+.result {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #385470;
+    border-radius: 8px;
+}
+
+#result {
+    font-size: 18px;
+    font-weight: 600;
+    color: #ecf0f1;
+}
+
+#qr-code-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#qr-code {
+    width: 200px;
+    height: 200px;
+    border: 1px solid #7f8c8d;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #34495e;
+}
+
+/* PDF Button Styles */
+#pdf-button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #2ec969;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#pdf-button:hover {
+    background-color: #5c349c;
+
+}
+
+
+
+
+
+/* Refresh Button and Timer Container */
+#refresh-container {
+    position: fixed; /* Fixed position */
+    top: 10px; /* Position from the top */
+    right: 10px; /* Position from the right */
+    text-align: center; /* Center align content */
+    z-index: 1000; /* Ensure it stays on top */
+}
+
+#refresh-button {
+    padding: 5px 10px; /* Smaller padding */
+    background-color: #e67e22; /* Orange color */
+    color: white;
+    border: none;
+    border-radius: 6px; /* Slightly smaller border radius */
+    font-size: 12px; /* Smaller font size */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: auto; /* Auto width based on content */
+    display: inline-block; /* Ensure the button only takes up necessary space */
+}
+
+#refresh-button:hover {
+    background-color: #d35400; /* Darker orange on hover */
+}
+
+#timer {
+    margin-top: 5px; /* Space between button and timer */
+    font-size: 14px; /* Timer font size */
+    color: #333; /* Timer text color */
+    font-weight: bold; /* Bold text */
+}
