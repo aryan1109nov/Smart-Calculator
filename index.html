@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Calculator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>E-Calculator</h1>
+        <div class="calculator">
+            <div class="operation">
+                <label for="operation">Select Operation:</label>
+                <select id="operation">
+                    <option value="total">Calculate Total Bill</option>
+                    <option value="discount">Apply Discount</option>
+                   
+                </select><!-- Refresh Button and Timer Container -->
+    <div id="refresh-container">
+        <button id="refresh-button">Refresh Page</button>
+        <div id="timer">2:00</div>
+    </div>
+                
+                
+                <!-- Add this button -->
+        <button id="pdf-button">Willing To Serve You!</button>
+            </div>
+
+            <!-- Add jsPDF Library -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+
+<!-- Your custom JavaScript --> 
+    
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+
+            <div class="inputs">
+                <!-- Input fields will be dynamically added here -->
+            </div>
+          
+            <div class="result">
+                <h3>Result:</h3>
+                <p id="result"></p>
+            </div>
+            <div id="qr-code-container" style="display: none;">
+                <h3>Scan to Pay:</h3>
+                <img id="qr-code" src="" alt="QR Code">
+            </div>
+        </div>
+    </div>
+    
+   
+
+
+</body>
+</html>
+
+
+
+
+
